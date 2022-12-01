@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+:root {
+    --border-color: #144fc6;
+    --fill-color: #6ab3f8;
+  }
+  
+*{
+    box-sizing: border-box;
+}
+
+body{  
+    background-color: #3494e4;
+    color: #fff;
+    font-family: 'Roboto Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;    
+}
+
+h1{
+    margin: 10px 0 0;
+}
+ h3{
+     margin: 10px 0;
+ }
+
+ .cup{
+     background-color: #fff;
+     border: 1px solid var(--border-color);
+     color: var(--border-color);
+     border-radius: 0 0 40px 40px;
+     height: 330px;
+     width: 150px;
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+ }
+
+ .cup.cup-small{
+     height: 98px;
+     width: 50px;
+     border-radius: 0 0 14px 14px;
+     cursor: pointer;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     margin: 10px;
+     transition: 0.3s ease;
+ }
+
+ .cup.cup-small.full{
+     background-color: var(--fill-color);
+     color: #fff;
+ }
+
+ .cups{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     width: 300px;
+ }
+
+ .remained{
+     text-align: center;
+     flex: 1;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: 0.3s ease;
+ }
+
+ .remained span{
+     font-size: 20px;
+     font-weight: bold;
+ }
+
+ .remained small {
+    font-size: 12px;
+  }
+
+ .percentage{
+     background-color: var(--fill-color);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 30px;
+     font-weight: bold;
+     height: 0;
+     transition: 0.3 ease ;
+ }
+
+ .text {
+    text-align: center;
+    margin: 5px 0;
+  }
